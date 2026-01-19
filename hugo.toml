@@ -1,4 +1,4 @@
-baseURL = "https://etbon.github.io/martin_boneo_roboitcs_blog/"
+baseURL = "https://github.com/Etbon/martin_boneo_robotics_blog.git"
 languageCode = "en-us"
 title = "Martin Etcheverry Boneo"
 theme = "mana"
