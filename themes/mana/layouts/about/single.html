@@ -6,9 +6,15 @@
           <span class="list-title-line2">{{ .Title | upper }}</span>
         </h1>
 
-        {{ $avatarUrl := site.Params.avatar.about.url | default site.Params.avatar.url }}
-        {{ $avatarAsset := site.Params.avatar.about.assetPath | default site.Params.avatar.assetPath }}
+        {{ $avatarUrl := site.Params.avatar.about.url }}
+        {{ $avatarAsset := site.Params.avatar.about.assetPath }}
         {{ $enableResize := site.Params.avatar.about.enableResize | default site.Params.avatar.enableResize | default false }}
+
+        {{ if not (or $avatarUrl $avatarAsset) }}
+          {{ $avatarUrl = site.Params.avatar.url }}
+          {{ $avatarAsset = site.Params.avatar.assetPath }}
+          {{ $enableResize = site.Params.avatar.enableResize | default false }}
+        {{ end }}
 
         {{ if $avatarUrl }}
           <img src="{{ $avatarUrl }}" alt="{{ site.Title }}" class="about-page-avatar">

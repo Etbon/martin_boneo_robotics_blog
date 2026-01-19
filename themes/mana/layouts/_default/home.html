@@ -26,9 +26,15 @@
           {{ end }}
         </div>
         <div class="hero-image">
-          {{ $avatarUrl := site.Params.avatar.home.url | default site.Params.avatar.url }}
-          {{ $avatarAsset := site.Params.avatar.home.assetPath | default site.Params.avatar.assetPath }}
+          {{ $avatarUrl := site.Params.avatar.home.url }}
+          {{ $avatarAsset := site.Params.avatar.home.assetPath }}
           {{ $enableResize := site.Params.avatar.home.enableResize | default site.Params.avatar.enableResize | default false }}
+
+          {{ if not (or $avatarUrl $avatarAsset) }}
+            {{ $avatarUrl = site.Params.avatar.url }}
+            {{ $avatarAsset = site.Params.avatar.assetPath }}
+            {{ $enableResize = site.Params.avatar.enableResize | default false }}
+          {{ end }}
 
           {{ if $avatarUrl }}
             <img src="{{ $avatarUrl }}" alt="{{ site.Title }}" class="hero-logo">

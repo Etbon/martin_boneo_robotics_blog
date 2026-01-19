@@ -1,4 +1,4 @@
-baseURL = "https://github.com/Etbon/martin_boneo_robotics_blog.git"
+baseURL = "https://etbon.github.io/martin_boneo_robotics_blog/"
 languageCode = "en-us"
 title = "Martin Etcheverry Boneo"
 theme = "mana"
@@ -16,7 +16,8 @@ theme = "mana"
     url = "/images/drone.svg"
 
     [params.avatar.about]
-      url = "/images/martin.png"
+      assetPath = "images/martin.png"
+      enableResize = false
 
   [params.social]
     github = "https://github.com/Etbon"
