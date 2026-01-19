@@ -4,7 +4,8 @@
 const MIN_SEARCH_QUERY_LENGTH = 2;
 const SEARCH_RESULTS_LIMIT = 10;
 const SEARCH_DEBOUNCE_DELAY = 200;
-const SEARCH_INDEX_URL = "/index.json";
+const BASE_PATH = document.documentElement?.dataset?.baseurl || "/";
+const SEARCH_INDEX_URL = `${BASE_PATH.replace(/\/?$/, "/")}index.json`;
 const MODAL_FOCUS_DELAY = 100;
 
 // Scroll constants

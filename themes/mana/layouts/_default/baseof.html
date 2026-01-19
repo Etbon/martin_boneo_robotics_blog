@@ -1,8 +1,10 @@
 <!doctype html>
 <html
+
   lang="{{ site.Language.LanguageCode }}"
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
-  class="h-full">
+  class="h-full"
+  data-baseurl="{{ site.Home.RelPermalink }}">
   <head>
     {{ partial "head.html" . }}
   </head>
