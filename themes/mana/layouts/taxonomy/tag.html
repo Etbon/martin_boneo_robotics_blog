@@ -56,7 +56,7 @@
                       {{ range .Params.tags }}
                         {{ $isCurrentTag := eq . $.Title }}
                         <a
-                          href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+                          href="{{ "tags/" | relLangURL }}{{ . | urlize }}"
                           class="tag-chip {{ if $isCurrentTag }}tag-chip-active{{ end }}"
                           onclick="event.stopPropagation();">
                           {{ . }}
@@ -91,8 +91,8 @@
 
     <!-- Navigation links -->
     <div class="tag-nav-links">
-      <a href="{{ "/tags" | relURL }}" class="tag-nav-link">All Tags</a>
-      <a href="{{ "/" | relLangURL }}" class="tag-nav-link">Back to Home</a>
+      <a href="{{ "tags" | relURL }}" class="tag-nav-link">All Tags</a>
+      <a href="{{ site.Home.RelPermalink }}" class="tag-nav-link">Back to Home</a>
     </div>
   </div>
 {{ end }}
