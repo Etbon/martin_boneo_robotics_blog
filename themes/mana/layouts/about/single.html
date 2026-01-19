@@ -29,8 +29,9 @@
             {{ end }}
           {{ end }}
         {{ end }}
-        {{ if site.Params.description }}
-          <p class="about-page-description">{{ site.Params.description }}</p>
+        {{ $aboutQuote := site.Params.about.quote | default site.Params.description }}
+        {{ if $aboutQuote }}
+          <p class="about-page-description">{{ $aboutQuote }}</p>
         {{ end }}
 
         {{ if site.Params.social }}

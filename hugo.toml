@@ -11,6 +11,9 @@ theme = "mana"
   heroTitleLine1 = "Martin's Robotics Lab"
   heroTitleLine2 = "FIELD GUIDE"
 
+  [params.about]
+    quote = "Do, fail, learn. The rest will follow. -Tony Fadell"
+  
   [params.avatar]
     # Put an image in /static/images/avatar.jpg and set this:
     url = "/images/drone.svg"
