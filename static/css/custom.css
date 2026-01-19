@@ -1,0 +1,5 @@
+/* Force the whole site to dark colors (even if user tries light) */
+:root { color-scheme: dark; }
+
+/* If the theme uses data-theme, force it to behave like dark */
+html[data-theme="light"] { filter: invert(0) !important; }

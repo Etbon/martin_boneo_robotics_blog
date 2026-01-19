@@ -1,0 +1,93 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Martin Etcheverry Boneo"
+theme = "mana"
+
+
+[params]
+  description = "Notes and tools from building robots — what worked, what broke, and what I learned."
+  favicon = "/favicon/favicon.ico"
+  footerText = "All rights reserved."
+  heroTitleLine1 = "Martin's Robotics Lab"
+  heroTitleLine2 = "FIELD GUIDE"
+
+  [params.avatar]
+    # Put an image in /static/images/avatar.jpg and set this:
+    url = "/images/drone.svg"
+
+    [params.avatar.about]
+      url = "/images/martin.png"
+
+  [params.social]
+    github = "https://github.com/Etbon"
+    linkedin = "https://www.linkedin.com/in/mart%C3%ADn-etcheverry-boneo-a54ab2214/"
+    email = "martinetbon@gmail.com"
+
+  # Optional (leave disabled until you want it)
+  [params.buyMeACoffee]
+    enabled = false
+    id = ""
+    description = "Support me on Buy me a coffee!"
+    message = ""
+    color = "#BD5FFF"
+    position = "Right"
+    x_margin = "18"
+    y_margin = "18"
+
+  # Optional (leave empty until you set up Umami)
+  [params.umami]
+    websiteId = ""
+
+# Enable JSON output on the homepage so search works
+[outputs]
+  home = ["HTML", "JSON"]
+
+# Menu shown by the theme
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 20
+
+[[menus.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40
+
+
+[pagination]
+  pageSize = 10
+
+# Table of contents
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+
+  # Enable blockquote attributes so [!TIP], [!WARNING]+ etc work as “alerts”
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
+  # Syntax highlighting behavior
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"
+
+[params.codeHighlight]
+  darkTheme = "catppuccin-macchiato"
+  lightTheme = "catppuccin-frappe"

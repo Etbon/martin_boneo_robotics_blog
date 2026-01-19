@@ -1,0 +1,14 @@
+# --- Hugo output: generated website files ---
+public/
+
+# --- Hugo build/cache: regenerated automatically ---
+resources/
+.hugo_build.lock
+
+# --- OS junk files ---
+.DS_Store
+Thumbs.db
+
+# --- editor junk (optional) ---
+.vscode/
+.idea/
