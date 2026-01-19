@@ -1,4 +1,4 @@
-baseURL = "https://www.martinboneo.com/martin_boneo_robotics_blog/"
+baseURL = "https://martinboneo.com/martin_boneo_robotics_blog/"
 languageCode = "en-us"
 title = "Martin Etcheverry Boneo"
 theme = "mana"
