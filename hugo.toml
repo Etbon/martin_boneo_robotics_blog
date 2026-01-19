@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://etbon.github.io/martin_boneo_roboitcs_blog/"
 languageCode = "en-us"
 title = "Martin Etcheverry Boneo"
 theme = "mana"
@@ -91,3 +91,7 @@ theme = "mana"
 [params.codeHighlight]
   darkTheme = "catppuccin-macchiato"
   lightTheme = "catppuccin-frappe"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
