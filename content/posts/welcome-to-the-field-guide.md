@@ -14,4 +14,4 @@ This blog is my robotics **field guide**: notes and tools from building robots �
 - Clear explanations that don’t rely on memorizing
 
 > [!TIP]
-> If you learn differently (dyslexia / ADHD / or just “I need the why”), you’ll probably like how I write.
+> If you learn differently, you’ll probably like how I write.
