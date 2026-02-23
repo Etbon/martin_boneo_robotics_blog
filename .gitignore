@@ -1,6 +1,14 @@
 # --- Hugo output: generated website files ---
 public/
 
+# --- Python env / caches ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- Manim output / caches ---
+media/
+
 # --- Hugo build/cache: regenerated automatically ---
 resources/
 .hugo_build.lock
@@ -12,3 +20,15 @@ Thumbs.db
 # --- editor junk (optional) ---
 .vscode/
 .idea/
+
+# --- manim-slides output (generated) ---
+slides/
+static/decks/
+welcome.html
+welcome_assets/
+
+# --- temp files ---
+static/videos/test.txt
+static/videos/welcome.mpclearslides_templates/
+layouts/shortcodes/slides.html
+slides_templates/

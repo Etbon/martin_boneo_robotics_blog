@@ -84,6 +84,10 @@ theme = "mana"
       [markup.goldmark.parser.attribute]
         block = true
         title = true
+    
+    [markup.goldmark.renderer]
+      unsafe = true
+
 
   # Syntax highlighting behavior
   [markup.highlight]
