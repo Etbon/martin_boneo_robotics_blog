@@ -294,6 +294,14 @@
   margin-bottom: var(--spacing-md);
 }
 
+.post-content-main .shortcode-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: var(--spacing-md) 0;
+}
+
 .post-content-main ul,
 .post-content-main ol {
   margin-bottom: var(--spacing-md);

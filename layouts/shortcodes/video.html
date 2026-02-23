@@ -3,6 +3,6 @@
   {{- errorf "video shortcode requires a src parameter: %s" .Position -}}
 {{- end -}}
 {{- $type := .Get "type" | default "video/mp4" -}}
-<video{{ if ne (.Get "autoplay") "false" }} autoplay{{ end }}{{ if ne (.Get "muted") "false" }} muted{{ end }}{{ if ne (.Get "loop") "false" }} loop{{ end }}{{ if ne (.Get "playsinline") "false" }} playsinline{{ end }}{{ if eq (.Get "controls") "true" }} controls{{ end }} preload="metadata">
+<video class="shortcode-video"{{ if ne (.Get "autoplay") "false" }} autoplay{{ end }}{{ if ne (.Get "muted") "false" }} muted{{ end }}{{ if ne (.Get "loop") "false" }} loop{{ end }}{{ if ne (.Get "playsinline") "false" }} playsinline{{ end }}{{ if eq (.Get "controls") "true" }} controls{{ end }} preload="metadata">
   <source src="{{ $src | relURL }}" type="{{ $type }}">
 </video>

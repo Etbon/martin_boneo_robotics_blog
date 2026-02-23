@@ -27,7 +27,7 @@ So I’m building a system that helps me (and maybe you) learn like a builder:
 - **Toolbox posts** (reusable patterns, templates, checklists)
 - **Clear explanations** that don’t rely on memorization
 
-# The learning principles behind this blog
+## The learning principles behind this blog
 I don’t learn well by “memorize first, understand later.”
 For me, learning sticks when it’s built on three principles:
 
@@ -100,9 +100,6 @@ If a post includes code, it usually includes:
 If you’re new here:
 - Start with the **Build Logs** tag for the story of what I’m building
 - Use **Toolbox** posts when you want fast reusable patterns
-
-
----
 
 > We are not here to become repositories of facts.  
 > We are here to become explorers — mental simulators who can see the terrain ahead, connect distant ideas, and chart paths into the unknown.
