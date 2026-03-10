@@ -6,7 +6,7 @@ theme = "mana"
 
 [params]
   description = "Notes and tools from building robots — what worked, what broke, and what I learned."
-  favicon = "/favicon/favicon.ico"
+  favicon = "favicon.png"
   footerText = "All rights reserved."
   heroTitleLine1 = "Martin's Robotics Lab"
   heroTitleLine2 = "FIELD GUIDE"
