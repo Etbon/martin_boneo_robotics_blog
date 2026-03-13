@@ -28,7 +28,7 @@ So I’m building a system that helps me (and maybe you) learn like a builder:
 - **Clear explanations** that don’t rely on memorization
 
 ## The learning principles behind this blog
-I don’t learn well by “memorize first, understand later.”
+I don’t learn well by “memorizing first, understanding later.”
 For me, learning sticks when it’s built on three principles:
 
 ### 1. Experience - (build memories you can *reuse*)
@@ -77,7 +77,7 @@ I use a simple loop to make this practical:
   
   3. **Explore** — test it in the real world (or a sim / example)
   
-  4. **Assess** — compare result vs prediction; if wrong, find why and update the model, then repeat
+  4. **Assess** — compare result vs. prediction; if wrong, find why and update the model, then repeat
 
 ## What makes this “Field Guide” style
 When I explain something, I try to do three things:
@@ -91,7 +91,7 @@ If a post includes code, it usually includes:
 - Why it’s structured that way
 - Common failure modes & troubleshooting
 
-## Who this is for
+## Who is this for
 - People building with ROS 2, Nav2, Gazebo/Isaac, sensors, and real robots
 - People who want *reasoning-first learning*
 - People who like honest notes more than polished marketing
@@ -99,7 +99,7 @@ If a post includes code, it usually includes:
 ## Where to start
 If you’re new here:
 - Start with the **Build Logs** tag for the story of what I’m building
-- Use **Toolbox** posts when you want fast reusable patterns
+- Use **Toolbox** posts when you want fast, reusable patterns
 
 > We are not here to become repositories of facts.  
 > We are here to become explorers — mental simulators who can see the terrain ahead, connect distant ideas, and chart paths into the unknown.
@@ -110,4 +110,4 @@ If you’re new here:
 > Welcome to the Field Guide...
 > 
 > <br>
-> "Do. Fail. Learn. The rest will follow. — Tony Fadell"
+> "Do. Fail. Learn. The rest will follow." — Tony Fadell

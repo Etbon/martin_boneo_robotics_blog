@@ -1,7 +1,8 @@
-baseURL = "https://martinboneo.com/martin_boneo_robotics_blog/"
+baseURL = "https://martinboneo.com/"
 languageCode = "en-us"
 title = "Martin Etcheverry Boneo"
 theme = "mana"
+enableRobotsTXT = true
 
 
 [params]
