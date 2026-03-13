@@ -53,9 +53,23 @@
 
 <!-- Favicons -->
 {{ $favicon := site.Params.favicon | default "images/robot_arm.png" }}
-{{ $faviconURL := $favicon | relURL }}
-<link rel="icon" type="image/png" href="{{ $faviconURL }}">
-<link rel="shortcut icon" type="image/png" href="{{ $faviconURL }}">
+{{ $faviconPath := strings.TrimPrefix "/" $favicon }}
+{{ $faviconURL := $favicon | absURL }}
+{{ $faviconExt := lower (path.Ext $faviconPath) }}
+{{ $faviconType := "image/png" }}
+{{ if eq $faviconExt ".svg" }}
+  {{ $faviconType = "image/svg+xml" }}
+{{ else if eq $faviconExt ".ico" }}
+  {{ $faviconType = "image/x-icon" }}
+{{ else if eq $faviconExt ".webp" }}
+  {{ $faviconType = "image/webp" }}
+{{ end }}
+<link rel="icon" type="{{ $faviconType }}" href="{{ $faviconURL }}">
+{{ if fileExists "static/favicon.ico" }}
+  <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
+{{ else }}
+  <link rel="shortcut icon" type="{{ $faviconType }}" href="{{ $faviconURL }}">
+{{ end }}
 <link rel="apple-touch-icon" href="{{ $faviconURL }}">
 
 {{ range .AlternativeOutputFormats }}
